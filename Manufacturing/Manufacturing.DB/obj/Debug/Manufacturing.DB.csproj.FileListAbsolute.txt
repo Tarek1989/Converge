@@ -1,0 +1,10 @@
+C:\Users\Tarek_Akkawi\Desktop\C#\PersonalProjects\ConvergeProject\Manufacturing\Manufacturing.DB\bin\Debug\Manufacturing.DB.exe.config
+C:\Users\Tarek_Akkawi\Desktop\C#\PersonalProjects\ConvergeProject\Manufacturing\Manufacturing.DB\bin\Debug\Manufacturing.DB.exe
+C:\Users\Tarek_Akkawi\Desktop\C#\PersonalProjects\ConvergeProject\Manufacturing\Manufacturing.DB\bin\Debug\Manufacturing.DB.pdb
+C:\Users\Tarek_Akkawi\Desktop\C#\PersonalProjects\ConvergeProject\Manufacturing\Manufacturing.DB\obj\Debug\Manufacturing.DB.csprojResolveAssemblyReference.cache
+C:\Users\Tarek_Akkawi\Desktop\C#\PersonalProjects\ConvergeProject\Manufacturing\Manufacturing.DB\obj\Debug\Manufacturing.DB.exe
+C:\Users\Tarek_Akkawi\Desktop\C#\PersonalProjects\ConvergeProject\Manufacturing\Manufacturing.DB\obj\Debug\Manufacturing.DB.pdb
+C:\Users\Tarek_Akkawi\Desktop\C#\PersonalProjects\ConvergeProject\Manufacturing\Manufacturing.DB\bin\Debug\EntityFramework.dll
+C:\Users\Tarek_Akkawi\Desktop\C#\PersonalProjects\ConvergeProject\Manufacturing\Manufacturing.DB\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Tarek_Akkawi\Desktop\C#\PersonalProjects\ConvergeProject\Manufacturing\Manufacturing.DB\bin\Debug\EntityFramework.xml
+C:\Users\Tarek_Akkawi\Desktop\C#\PersonalProjects\ConvergeProject\Manufacturing\Manufacturing.DB\bin\Debug\EntityFramework.SqlServer.xml
