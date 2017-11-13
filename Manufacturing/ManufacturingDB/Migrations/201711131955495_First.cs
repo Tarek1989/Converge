@@ -11,12 +11,13 @@ namespace ManufacturingDB.Migrations
                 "dbo.Hardwares",
                 c => new
                     {
-                        id = c.Int(nullable: false, identity: true),
+                        ID = c.Int(nullable: false, identity: true),
+                        Date = c.DateTime(nullable: false),
                         Nodes = c.Int(nullable: false),
                         Repeaters = c.Int(nullable: false),
                         Hubs = c.Int(nullable: false),
                     })
-                .PrimaryKey(t => t.id);
+                .PrimaryKey(t => t.ID);
             
         }
         
