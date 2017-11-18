@@ -1,0 +1,21 @@
+﻿<Window x:Class="ManufacturingWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ManufacturingWPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+
+    <Window.DataContext>
+        <local:ManufacturingViewModel/>
+    </Window.DataContext>
+    
+    <Grid>
+        <TextBlock Text="Click Button"/>
+        <Button  Content="Button" Click="Button_Click"  HorizontalAlignment="Left" Margin="0,28,0,0" VerticalAlignment="Top" Width="75"/>
+        <TextBox x:Name="Nodes" HorizontalAlignment="Left" Height="23" Margin="118,25,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+    </Grid>
+    
+    
+</Window>
