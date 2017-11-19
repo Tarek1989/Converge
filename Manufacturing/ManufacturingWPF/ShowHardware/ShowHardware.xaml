@@ -1,0 +1,36 @@
+﻿<Page x:Class="ManufacturingWPF.ShowHardware"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ManufacturingWPF"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+      Title="ShowHardware">
+
+
+
+    <Grid Background="AliceBlue">
+        <ListView x:Name="HardwareList" >  <!-- Like ListBox (i.e displaying a list of data) but with a different View setting-->
+            <ListView.View>
+                <GridView> <!-- GridView comes with ListView and allows columns and data binding . SEE BELOW-->
+                    <GridViewColumn DisplayMemberBinding="{Binding ID}" Header="ID"/>
+                    <GridViewColumn DisplayMemberBinding="{Binding Date}" Header="Date"/>
+                    <GridViewColumn DisplayMemberBinding="{Binding Nodes}" Header="Nodes"/>
+                    <GridViewColumn DisplayMemberBinding="{Binding Repeaters}" Header="Repeaters"/>
+                    <GridViewColumn DisplayMemberBinding="{Binding Hubs}" Header="Hubs"/>
+
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+    </Grid>
+
+
+
+
+</Page>
+
+    
+    
+    

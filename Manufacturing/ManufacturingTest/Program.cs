@@ -12,16 +12,17 @@ namespace ManufacturingTest
     class Program
     {
         static void Main(string[] args)
-        {
+        {  
+
             ManufacturingDataModel MDM = new ManufacturingDataModel();
             Test t = new Test(MDM);
 
-            Hardware h = new Hardware();
-            h.Nodes = 3;
-            h.Repeaters = 156;
-            h.Hubs = 12;
+            Hardware h6 = new Hardware();
+            h6.Nodes = 3000;
+            h6.Repeaters = 1600;
+            h6.Hubs = 1200;
 
-            //t.AddHardware(h);
+           // t.AddHardware(h6);
 
            /* Hardware hardware = new Hardware();
             

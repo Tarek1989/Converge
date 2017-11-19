@@ -25,34 +25,19 @@ namespace ManufacturingWPF
         public MainWindow()
         {
             InitializeComponent();
-            
-
-           
 
         }
+
+
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            ManufacturingDataModel MDM = new ManufacturingDataModel();
-            Test t = new Test(MDM);
-
-            List<Hardware> x = t.GetHardware();
-
-
-            foreach (Hardware i in x)
-            {
-
-                if(i.ID == 1)
-                {
-                    
-                   string a = i.Nodes.ToString();
-                    Nodes.Text = a;
-                }
-
-            } 
+            //Shows content of next page or next xaml
+            //Main is our first xaml
+            //Content refers to the content of our new xaml which is showhardware
+            Main.Content = new ShowHardware();
 
 
         }
-
     }
 }
