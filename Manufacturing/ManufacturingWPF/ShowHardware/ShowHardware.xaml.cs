@@ -47,5 +47,9 @@ namespace ManufacturingWPF
             }*/
         }
 
+        private void Add_Hardware(object sender, RoutedEventArgs e)
+        {
+            PageOne.Content = new AddHardware();
+        }
     }
 }

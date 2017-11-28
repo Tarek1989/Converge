@@ -5,20 +5,28 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ManufacturingWPF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        SizeToContent="WidthAndHeight"
+        Title="Converge" >
 
 
-    <Grid>
-        
-        
-        <Button Content="Show Hardware"   Click="Button_Click"  HorizontalAlignment="Left" Height="69" Margin="177,10,0,0" VerticalAlignment="Top" Width="155"/>
-        <Button Content="Add Hardware" HorizontalAlignment="Left" Height="69" Margin="177,125,0,0" VerticalAlignment="Top" Width="155" RenderTransformOrigin="0.626,-1.246"/>
-        <Button Content="Remove Hardware" HorizontalAlignment="Left" Height="69" Margin="177,240,0,0" VerticalAlignment="Top" Width="155"/>
+    <Grid Background="#332D39">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Button Style="{StaticResource MyButtonStyle}" BorderThickness="0" TextBlock.FontFamily="Lucida Console" TextBlock.Foreground="#FCD07D" TextBlock.FontSize="16" Background="#564C5F" Content="Show Hardware"   Click="Button_Click"  HorizontalAlignment="Center" Height="69"  VerticalAlignment="Center"  Margin="84,137,76,113">
+            <Button.BitmapEffect>
+                <DropShadowBitmapEffect Softness=".8" ShadowDepth="20"/>
+            </Button.BitmapEffect>
+        </Button>
+
 
         <!-- Frame below alows to navigate. See cs file-->
         <Frame x:Name="Main"/>
+        
+
 
     </Grid>
-    
-    
+
+
 </Window>
