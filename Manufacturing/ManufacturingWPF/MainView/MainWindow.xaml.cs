@@ -35,7 +35,9 @@ namespace ManufacturingWPF
             //Shows content of next page or next xaml
             //Main is our first xaml
             //Content refers to the content of our new xaml which is showhardware
-            Main.Content = new ShowHardware();
+            ShowHardware sh = new ShowHardware();
+            sh.Show();
+            this.Close();
 
 
         }

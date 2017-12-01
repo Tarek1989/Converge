@@ -1,29 +1,45 @@
-﻿<Page x:Class="ManufacturingWPF.AddHardware"
-      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-      xmlns:local="clr-namespace:ManufacturingWPF"
-      mc:Ignorable="d" 
-      d:DesignHeight="370" d:DesignWidth="525"
-      Title="AddHardware">
-
-    <Grid Background="AliceBlue">
+﻿<Window x:Class="ManufacturingWPF.AddHardware"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ManufacturingWPF"
+        mc:Ignorable="d"
+        Title="AddHardware" Height="350" Width="520">
+    <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition  Height="*"/>
+            <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
         <Border Grid.Row="0" Background="yellow"/>
-        
-        <Button  Click="Submit_Nodes" Content="Add" HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Height="22" Width="75" Margin="225,0"/>
+        <Border Grid.Row="1" Background="Coral"/>
+        <Border Grid.Row="2" Background="SeaGreen"/>
+        <Border Grid.Row="3" Background="Beige"/>
+
+        <Label Content="Nodes" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="35,36,0,0" VerticalAlignment="Top" Width="99"/>
         <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Center" Height="32"  VerticalAlignment="Center" Width="127">
             <TextBox  x:Name="AddNodes" HorizontalAlignment="Center" VerticalAlignment="Center" TextWrapping="Wrap"  FontStyle="Italic" FontWeight="UltraLight"  TextAlignment="Center"  Width="124" Height="32"/>
         </Border>
+        <Label Content="Nodes" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="368,36,0,0" VerticalAlignment="Top" Width="99"/>
 
-        <Frame x:Name="PageTwo"/>
+        <Label Content="Repeaters" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="35,35,0,0" VerticalAlignment="Top" Width="99" Grid.Row="1"/>
+        <Border  BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="32"  VerticalAlignment="Center" Width="127" RenderTransformOrigin="2.236,4.438" Margin="199,35,0,26" Grid.Row="1">
+            <TextBox  x:Name="AddRepeaters" HorizontalAlignment="Center" VerticalAlignment="Center" TextWrapping="Wrap"  FontStyle="Italic" FontWeight="UltraLight"  TextAlignment="Center"  Width="124" Height="32" RenderTransformOrigin="0.508,-0.219"/>
+        </Border>
+        <Label Content="Repeaters" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="368,35,0,0" VerticalAlignment="Top" Width="99" Grid.Row="1"/>
+
+
+        <Label Content="Hubs" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="35,38,0,0" VerticalAlignment="Top" Width="99" Grid.Row="2"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="32"  VerticalAlignment="Center" Width="127" RenderTransformOrigin="2.118,6.906" Margin="199,38,0,22" Grid.Row="2">
+            <TextBox  x:Name="AddHubs" HorizontalAlignment="Center" VerticalAlignment="Center" TextWrapping="Wrap"  FontStyle="Italic" FontWeight="UltraLight"  TextAlignment="Center"  Width="124" Height="32"/>
+        </Border>
+        <Label Content="Hubs" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="368,38,0,0" VerticalAlignment="Top" Width="99" Grid.Row="2"/>
+
+        <Button  Click="Submit_Nodes" Content="Add" HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Height="22" Margin="199,0,199,30" Grid.Row="3"/>
+
 
     </Grid>
-</Page>
+</Window>

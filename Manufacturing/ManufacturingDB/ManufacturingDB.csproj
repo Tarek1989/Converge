@@ -51,9 +51,9 @@
   <ItemGroup>
     <Compile Include="Hardware.cs" />
     <Compile Include="ManufacturingDataModel.cs" />
-    <Compile Include="Migrations\201711131955495_First.cs" />
-    <Compile Include="Migrations\201711131955495_First.Designer.cs">
-      <DependentUpon>201711131955495_First.cs</DependentUpon>
+    <Compile Include="Migrations\201712011744105_First.cs" />
+    <Compile Include="Migrations\201712011744105_First.Designer.cs">
+      <DependentUpon>201712011744105_First.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -63,8 +63,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201711131955495_First.resx">
-      <DependentUpon>201711131955495_First.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201712011744105_First.resx">
+      <DependentUpon>201712011744105_First.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -12,7 +12,6 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace ManufacturingWPF
@@ -20,13 +19,12 @@ namespace ManufacturingWPF
     /// <summary>
     /// Interaction logic for ShowHardware.xaml
     /// </summary>
-    public partial class ShowHardware : Page
+    public partial class ShowHardware : Window
     {
         public ShowHardware()
         {
             InitializeComponent();
             DisplayData();
-            
         }
 
         public void DisplayData()
@@ -36,7 +34,7 @@ namespace ManufacturingWPF
 
             //Retrieves the data from db
             List<Hardware> x = t.GetHardware();
-            
+
             /*HArdwareList is the x:Name in ListView
             HardwareList.ItemSource = x is basically directing towards the data in list.*/
             HardwareList.ItemsSource = x;
@@ -49,7 +47,11 @@ namespace ManufacturingWPF
 
         private void Add_Hardware(object sender, RoutedEventArgs e)
         {
-            PageOne.Content = new AddHardware();
+            //PageOne.Content = new AddHardware();
+
+            AddHardware ad = new AddHardware();
+            ad.Show();
+            this.Close();
         }
     }
 }

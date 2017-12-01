@@ -13,7 +13,7 @@ namespace ManufacturingDB.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201711131955495_First"; }
+            get { return "201712011744105_First"; }
         }
         
         string IMigrationMetadata.Source

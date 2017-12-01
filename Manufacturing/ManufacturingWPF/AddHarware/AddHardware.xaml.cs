@@ -12,7 +12,6 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace ManufacturingWPF
@@ -20,28 +19,45 @@ namespace ManufacturingWPF
     /// <summary>
     /// Interaction logic for AddHardware.xaml
     /// </summary>
-    public partial class AddHardware : Page
+    public partial class AddHardware : Window
     {
         public AddHardware()
         {
             InitializeComponent();
         }
 
-        private void Submit_Nodes(object sender, RoutedEventArgs e )
+        private string nodes;
+        private string repeaters;
+        private string hubs;
+
+        private void Submit_Nodes(object sender, RoutedEventArgs e)
         {
             ManufacturingDataModel MDM = new ManufacturingDataModel();
             Test t = new Test(MDM);
             Hardware h = new Hardware();
 
-            string nodes = AddNodes.Text;
+            try
+            {
+                nodes = AddNodes.Text;
+                repeaters = AddRepeaters.Text;
+                hubs = AddHubs.Text;
 
-            int numberofnodes = Convert.ToInt32(nodes);
-            h.Nodes = numberofnodes;
+                h.Nodes = Convert.ToInt32(nodes);
+                h.Repeaters = Convert.ToInt32(repeaters);
+                h.Hubs = Convert.ToInt32(hubs);
 
-            //return update version but does not properly work
-            PageTwo.Content = new ShowHardware();
+                t.AddHardware(h);
 
-            t.AddHardware(h);
+            }
+            catch
+            {
+                MessageBox.Show("At a numerical value");
+            }
+
+            ShowHardware sh = new ShowHardware();
+            sh.Show();
+            this.Close();
+
 
         }
     }

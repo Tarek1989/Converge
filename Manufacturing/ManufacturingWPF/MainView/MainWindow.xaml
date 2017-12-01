@@ -22,7 +22,7 @@
 
 
         <!-- Frame below alows to navigate. See cs file-->
-        <Frame x:Name="Main"/>
+        
         
 
 

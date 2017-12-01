@@ -22,6 +22,7 @@ namespace ManufacturingTest
             h6.Repeaters = 1600;
             h6.Hubs = 1200;
 
+
            // t.AddHardware(h6);
 
            /* Hardware hardware = new Hardware();
@@ -36,9 +37,10 @@ namespace ManufacturingTest
             //This for the remove method
             //Reason is that you need to get the data and through it select the object to delete.
 
-           /*List<Hardware> RemoveList = t.GetHardware();
+         //  List<Hardware> RemoveList = t.GetHardware();
 
-            foreach(Hardware i in RemoveList)
+
+            /*foreach(Hardware i in RemoveList)
             {
                 if(i.ID == 2 )
                 {
