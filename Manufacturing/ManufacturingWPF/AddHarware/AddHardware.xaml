@@ -5,40 +5,37 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ManufacturingWPF"
         mc:Ignorable="d"
-        Title="AddHardware" Height="350" Width="520">
-    <Grid>
+        Title="AddHardware"  Height="300" Width="300">
+    <Grid  Background="#332D39">
         <Grid.RowDefinitions>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <Border Grid.Row="0" Background="yellow"/>
-        <Border Grid.Row="1" Background="Coral"/>
-        <Border Grid.Row="2" Background="SeaGreen"/>
-        <Border Grid.Row="3" Background="Beige"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="3*"/>
+        </Grid.ColumnDefinitions>
 
-        <Label Content="Nodes" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="35,36,0,0" VerticalAlignment="Top" Width="99"/>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Center" Height="32"  VerticalAlignment="Center" Width="127">
-            <TextBox  x:Name="AddNodes" HorizontalAlignment="Center" VerticalAlignment="Center" TextWrapping="Wrap"  FontStyle="Italic" FontWeight="UltraLight"  TextAlignment="Center"  Width="124" Height="32"/>
+        <Label FontWeight="UltraBold" FontSize="14" Content="Node" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.216,0.538" Width="53" Height="57"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Center" Height="57"  VerticalAlignment="Center" Width="199" Grid.Column="1" Margin="10">
+            <TextBox FontSize="28" x:Name="AddNodes" HorizontalAlignment="Center" VerticalAlignment="Center" TextWrapping="Wrap"  TextAlignment="Center"  Width="199" Height="57" Margin="-1"/>
         </Border>
-        <Label Content="Nodes" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="368,36,0,0" VerticalAlignment="Top" Width="99"/>
 
-        <Label Content="Repeaters" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="35,35,0,0" VerticalAlignment="Top" Width="99" Grid.Row="1"/>
-        <Border  BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="32"  VerticalAlignment="Center" Width="127" RenderTransformOrigin="2.236,4.438" Margin="199,35,0,26" Grid.Row="1">
-            <TextBox  x:Name="AddRepeaters" HorizontalAlignment="Center" VerticalAlignment="Center" TextWrapping="Wrap"  FontStyle="Italic" FontWeight="UltraLight"  TextAlignment="Center"  Width="124" Height="32" RenderTransformOrigin="0.508,-0.219"/>
+        <Label FontWeight="UltraBold" FontSize="14" Content="Repeater" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="0,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.216,0.538" Width="73" Height="57" Grid.Row="1"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Center" Height="57"  VerticalAlignment="Center" Width="199" Grid.Column="1" Margin="10" Grid.Row="1">
+            <TextBox FontSize="28" x:Name="AddRepeaters" HorizontalAlignment="Center" VerticalAlignment="Center" TextWrapping="Wrap"    TextAlignment="Center"  Width="199" Height="57" Margin="-1"/>
         </Border>
-        <Label Content="Repeaters" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="368,35,0,0" VerticalAlignment="Top" Width="99" Grid.Row="1"/>
 
-
-        <Label Content="Hubs" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="35,38,0,0" VerticalAlignment="Top" Width="99" Grid.Row="2"/>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="32"  VerticalAlignment="Center" Width="127" RenderTransformOrigin="2.118,6.906" Margin="199,38,0,22" Grid.Row="2">
-            <TextBox  x:Name="AddHubs" HorizontalAlignment="Center" VerticalAlignment="Center" TextWrapping="Wrap"  FontStyle="Italic" FontWeight="UltraLight"  TextAlignment="Center"  Width="124" Height="32"/>
+        <Label FontWeight="UltraBold" FontSize="14" Content="Hub" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.216,0.538" Width="53" Height="57" Grid.Row="2"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Center" Height="57"  VerticalAlignment="Center" Width="199" Grid.Column="1" Margin="10" Grid.Row="2">
+            <TextBox FontSize="28" x:Name="AddHubs" HorizontalAlignment="Center" VerticalAlignment="Center" TextWrapping="Wrap"   TextAlignment="Center"  Width="199" Height="57" Margin="-1"/>
         </Border>
-        <Label Content="Hubs" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="368,38,0,0" VerticalAlignment="Top" Width="99" Grid.Row="2"/>
 
-        <Button  Click="Submit_Nodes" Content="Add" HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Height="22" Margin="199,0,199,30" Grid.Row="3"/>
+        <Button Click="Submit_Nodes" FontWeight="Bold" Content="ADD" Grid.Column="1" HorizontalAlignment="Left" Margin="73,10,0,0" Grid.Row="3" VerticalAlignment="Top" Width="80"/>
+        <Button Background="DarkKhaki" Click="Button_Click" Content="BACK"  FontWeight="Bold" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="3" VerticalAlignment="Top" Width="51"/>
 
 
     </Grid>

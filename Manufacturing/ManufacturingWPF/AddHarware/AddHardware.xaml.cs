@@ -24,6 +24,7 @@ namespace ManufacturingWPF
         public AddHardware()
         {
             InitializeComponent();
+            
         }
 
         private string nodes;
@@ -48,17 +49,24 @@ namespace ManufacturingWPF
 
                 t.AddHardware(h);
 
+                ShowHardware sh = new ShowHardware();
+                sh.Show();
+                this.Close();
+                
+
             }
             catch
             {
-                MessageBox.Show("At a numerical value");
+                MessageBox.Show("Add a numerical value");
             }
 
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
             ShowHardware sh = new ShowHardware();
             sh.Show();
             this.Close();
-
-
         }
     }
 }

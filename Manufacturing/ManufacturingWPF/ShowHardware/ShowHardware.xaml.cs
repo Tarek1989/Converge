@@ -53,5 +53,26 @@ namespace ManufacturingWPF
             ad.Show();
             this.Close();
         }
+
+        private void Remove_Hardware(object sender, RoutedEventArgs e)
+        {
+            RemoveHardware rd = new RemoveHardware();
+            rd.Show();
+            this.Close();
+        }
+
+        private void Update_Hardware(object sender, RoutedEventArgs e)
+        {
+            UpdateHardware uh = new UpdateHardware();
+            uh.Show();
+            this.Close();
+        }
+
+        private void Stats (object sender, RoutedEventArgs e)
+        {
+            Stats s = new Stats();
+            s.Show();
+            this.Close();
+        }
     }
 }

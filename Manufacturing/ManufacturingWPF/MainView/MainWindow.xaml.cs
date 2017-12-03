@@ -32,9 +32,13 @@ namespace ManufacturingWPF
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            //Shows content of next page or next xaml
-            //Main is our first xaml
-            //Content refers to the content of our new xaml which is showhardware
+            //The code below is to navigate between Windows.
+            //If you wish to do it with page then use frame as below
+            /* XAML
+            <Frame Source="Page1.xaml">
+            cs.file
+            page1.content = new addhardware*/
+
             ShowHardware sh = new ShowHardware();
             sh.Show();
             this.Close();

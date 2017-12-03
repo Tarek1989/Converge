@@ -34,9 +34,9 @@
         </ListView>
 
         <Button Content="Add Hardware" Click="Add_Hardware" HorizontalAlignment="Center" Width="128" Height="82" VerticalAlignment="Top" RenderTransformOrigin="0.944,0.54" Grid.Column="1"/>
-        <Button Content="Update Hardware" Margin="0,82,0,0" HorizontalAlignment="Center" Width="128" Height="81" VerticalAlignment="Top" Grid.Column="1"/>
-        <Button Content="Remove Hardware" HorizontalAlignment="Center" Margin="0,163,0,0" VerticalAlignment="Top" Width="128" Height="84" Grid.Column="1"/>
-        <Button Content="Stats" HorizontalAlignment="Center" Margin="0,247,0,0" Width="128" Height="72" VerticalAlignment="Top" Grid.Column="1"/>
+        <Button Content="Update Hardware" Click="Update_Hardware" Margin="0,82,0,0" HorizontalAlignment="Center" Width="128" Height="81" VerticalAlignment="Top" Grid.Column="1"/>
+        <Button Content="Remove Hardware" Click="Remove_Hardware" HorizontalAlignment="Center" Margin="0,163,0,0" VerticalAlignment="Top" Width="128" Height="84" Grid.Column="1"/>
+        <Button Content="Stats" Click="Stats" HorizontalAlignment="Center" Margin="0,247,0,0" Width="128" Height="72" VerticalAlignment="Top" Grid.Column="1"/>
 
 
     </Grid>
