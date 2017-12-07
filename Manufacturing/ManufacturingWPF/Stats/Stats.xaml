@@ -14,12 +14,16 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <a:CartesianChart >
+        <a:CartesianChart Series="{Binding SeriesCollection}" >
             <a:CartesianChart.AxisX>
-                <a:Axis Title="Hardware"/>
+                <a:Axis Title="Hardware" Labels="{Binding Labels}"></a:Axis>
             </a:CartesianChart.AxisX>
-            
+            <a:CartesianChart.AxisY>
+                <a:Axis Title="Quantity" LabelFormatter="{Binding Formatter}"></a:Axis>
+            </a:CartesianChart.AxisY>
         </a:CartesianChart>
-        
+
+        <Button Background="DarkKhaki" Click="Button_Click" Content="BACK"  FontWeight="Bold" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="3" VerticalAlignment="Top" Width="51"/>
+
     </Grid>
 </Window>
