@@ -9,16 +9,16 @@
 
     <Grid Background="#332D39">
         <Grid.RowDefinitions>
-            <RowDefinition Height="2*"/>
-            <RowDefinition Height="2*"/>
-            <RowDefinition Height="2*"/>
-            <RowDefinition Height="2*"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
         </Grid.RowDefinitions>
 
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="auto"/>
         </Grid.ColumnDefinitions>
 
 
@@ -46,7 +46,7 @@
         </Border>
         <Label FontWeight="UltraBold" FontSize="14" Content="Hub" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="10,13,0,0" VerticalAlignment="Top" Width="53" Height="44" RenderTransformOrigin="0.491,0.477" Grid.Row="3"/>
 
-        <Button  Click="Update_Hardware" FontWeight="Bold" Content="UPDATE" Grid.Column="1"  HorizontalAlignment="Center" Grid.Row="4" VerticalAlignment="Center" Width="75"/>
+        <Button  Click="Update_Hardware" FontWeight="Bold" Content="UPDATE" Grid.Column="1"  HorizontalAlignment="Center" Grid.Row="4" VerticalAlignment="Center" Width="74" Margin="74,7,63,0"/>
 
         <Button Background="DarkKhaki" Click="Button_Click" Content="BACK"  FontWeight="Bold" HorizontalAlignment="Left" Margin="10,5,0,0" Grid.Row="4" VerticalAlignment="Top" Width="51"/>
 

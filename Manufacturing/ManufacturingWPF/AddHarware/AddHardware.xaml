@@ -5,18 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ManufacturingWPF"
         mc:Ignorable="d"
-        Title="AddHardware"  Height="300" Width="300">
+        Title="AddHardware"  Height="300" Width="300" >
+    
     <Grid  Background="#332D39">
         <Grid.RowDefinitions>
-            <RowDefinition Height="2*"/>
-            <RowDefinition Height="2*"/>
-            <RowDefinition Height="2*"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
         </Grid.RowDefinitions>
 
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="auto"/>
         </Grid.ColumnDefinitions>
 
         <Label FontWeight="UltraBold" FontSize="14" Content="Node" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.216,0.538" Width="53" Height="57"/>
@@ -34,8 +35,8 @@
             <TextBox FontSize="28" x:Name="AddHubs" HorizontalAlignment="Center" VerticalAlignment="Center" TextWrapping="Wrap"   TextAlignment="Center"  Width="199" Height="57" Margin="-1"/>
         </Border>
 
-        <Button Click="Submit_Nodes" FontWeight="Bold" Content="ADD" Grid.Column="1" HorizontalAlignment="Left" Margin="73,10,0,0" Grid.Row="3" VerticalAlignment="Top" Width="80"/>
-        <Button Background="DarkKhaki" Click="Button_Click" Content="BACK"  FontWeight="Bold" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="3" VerticalAlignment="Top" Width="51"/>
+        <Button Click="Submit_Nodes" FontWeight="Bold" Content="ADD" Grid.Column="1" HorizontalAlignment="Left" Margin="73,8,0,0" Grid.Row="3" VerticalAlignment="Top" Width="80"/>
+        <Button Background="DarkKhaki" Click="Button_Click" Content="BACK"  FontWeight="Bold" HorizontalAlignment="Left" Margin="10,8,0,0" Grid.Row="3" VerticalAlignment="Top" Width="51"/>
 
 
     </Grid>

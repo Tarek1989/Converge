@@ -27,22 +27,32 @@ namespace ManufacturingWPF
             DisplayData();
         }
 
+        
         public void DisplayData()
         {
-            ManufacturingDataModel MDM = new ManufacturingDataModel();
-            Test t = new Test(MDM);
-
-            //Retrieves the data from db
-            List<Hardware> x = t.GetHardware();
-
-            /*HArdwareList is the x:Name in ListView
-            HardwareList.ItemSource = x is basically directing towards the data in list.*/
-            HardwareList.ItemsSource = x;
-
-            /*foreach(Hardware i in x )
+            try
             {
-                //HardwareList.Items.Add(i);
-            }*/
+                ManufacturingDataModel MDM = new ManufacturingDataModel();
+                Test t = new Test(MDM);
+
+                //Retrieves the data from db
+                List<Hardware> x = t.GetHardware();
+
+                /*HArdwareList is the x:Name in ListView
+                HardwareList.ItemSource = x is basically directing towards the data in list.*/
+                HardwareList.ItemsSource = x;
+
+                /*foreach(Hardware i in x )
+                {
+                    //HardwareList.Items.Add(i);
+                }*/
+            }
+            catch
+            {
+                MessageBox.Show("Check Database Connection");
+            }
+
+
         }
 
         private void Add_Hardware(object sender, RoutedEventArgs e)
